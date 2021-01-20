@@ -3,7 +3,17 @@
 
 /* .animated.hinge{-webkit-animation-duration:2s;animation-duration:2s}. */
 
-
 #themecolors .selector {
+    cursor: pointer;
+}
+
+#google-btn {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cursor {
     cursor: pointer;
 }

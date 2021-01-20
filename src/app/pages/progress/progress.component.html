@@ -2,56 +2,54 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-
+                
                 <h4 class="card-title">Striped Progress bar</h4>
-                <!-- Bar of porcent 1 -->
                 <div class="progress m-t-20">
-                    <div class="progress-bar bg-primary progress-bar-striped active" 
-                    style="height:10px;"
-                    [style.width]="getProgreso1" 
-                    role="progressbar"> 
-                    </div>
+                    <div class="progress-bar bg-primary progress-bar-striped active"
+                        style="height:5px;"
+                        [style.width]="getProgreso1"
+                         role="progressbar">
+                        </div>
                 </div>
-                    <!-- Bar of porcent 2 -->
+
                 <div class="progress m-t-20">
                     <div class="progress-bar bg-info progress-bar-striped active"
-                    style="height:10px;"
-                    [style.width]="getProgreso2" 
-                    role="progressbar"> 
-                    </div>
+                         style="height:5px;"
+                         [style.width]="getProgreso2"
+                         role="progressbar">
+                        </div>
                 </div>
-
             </div>
         </div>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-lg-6">
+
+    <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <!-- command + and - -->
-                <app-incrementador 
-                (valor)="progreso1 = $event" 
-                [progreso]="progreso1"
-                [btnClass]="'btn-primary'"
-                >
-            </app-incrementador>
+    
+                <app-incrementador (valor)="progreso1 = $event" 
+                                   [valor]="progreso1">
+                </app-incrementador>
+    
             </div>
         </div>
-
     </div>
-    <div class="col-lg-6">
+
+    <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <!-- command + and - -->
-                <app-incrementador 
-                (valor)="progreso2 = $event" 
-                [progreso]="progreso2"
-                [btnClass]="'btn-info'"
-                ></app-incrementador>
+    
+                <app-incrementador (valor)="progreso2 = $event" 
+                                    [valor]="progreso2"
+                                    [btnClass]="'btn-info'">
+                </app-incrementador>
+    
             </div>
         </div>
-
     </div>
+
+
 </div>

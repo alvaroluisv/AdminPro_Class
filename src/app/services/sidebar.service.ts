@@ -7,16 +7,16 @@ export class SidebarService {
 
   menu: any[] = [
     {
-      titulo: 'Principal',
+      titulo: 'Dashboard',
       icono: 'mdi mdi-gauge',
       submenu: [
-        { titulo: 'DashBoard', url: '/'},
-        { titulo: 'ProgressBar', url: 'progress'},
-        { titulo: 'Graficas', url: 'grafica1'},
-        { titulo: 'Promesas', url: 'promesas'},
-        { titulo: 'RxJs', url: 'rxjs'}
-      ] 
-    }
+        { titulo: 'Main', url: '/' },
+        { titulo: 'Gráficas', url: 'grafica1' },
+        { titulo: 'rxjs', url: 'rxjs' },
+        { titulo: 'Promesas', url: 'promesas' },
+        { titulo: 'ProgressBar', url: 'progress' },
+      ]
+    },
   ];
 
   constructor() { }

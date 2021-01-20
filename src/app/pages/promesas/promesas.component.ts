@@ -14,39 +14,41 @@ export class PromesasComponent implements OnInit {
 
     this.getUsuarios().then( usuarios => {
       console.log(usuarios);
-    });
-    // const promesa = new Promise( ( resolve, reject) => {
+    })
 
-    //   if( true ){
+  
+
+    // const promesa = new Promise( ( resolve, reject ) => {
+
+    //   if ( false ) {
     //     resolve('Hola Mundo');
     //   } else {
-    //     reject('Algo salio Mal');
+    //     reject('Algo salio mal');
     //   }
+
+
     // });
 
-    // promesa.then( (mensaje) => {
-
-    //   console.log(mensaje);
-    // }).catch( error => console.log('Error en mi promesa', error));
+    // promesa
+    //   .then( (mensaje) => {
+    //     console.log( mensaje );
+    //   })
+    //   .catch( error => console.log('Error en mi promesa', error ) );
 
     // console.log('Fin del Init');
 
+  }
 
+  getUsuarios() {
 
-}
-
-
-getUsuarios(){
-  
-  // const promesa = new Promise( resolve => {
     return new Promise( resolve => {
 
-    fetch('https://reqres.in/api/users?page=2')
-    .then( resp => resp.json())
-    .then( body => resolve( body.data ));
+      fetch('https://reqres.in/api/users')
+        .then( resp => resp.json() )
+        .then( body => resolve( body.data ) );
 
-  });
-  // return promesa;
-}
+    });
+
+  }
 
 }

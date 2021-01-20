@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
-// import { MultiDataSet, Label, Color } from 'ng2-charts';
+import { Component } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-grafica1',
@@ -9,12 +10,9 @@ import { Component, Input } from '@angular/core';
 })
 export class Grafica1Component {
 
-  titulo: string = "Sin titulo";
-
-  public labels1: string[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-  // public data1 = [ [350, 450, 100], ];
-  // Example how use data
-  public data1 = [ [25, 35, 40], ];
-  public color1 = [{ backgroundColor: ['#6857E6', '#009FEE', '#F02059'] }];
+  public labels1: string[] = ['Pan', 'Refresco', 'Tacos'];
+  public data1 = [
+    [10, 15, 40],
+  ];
 
 }
