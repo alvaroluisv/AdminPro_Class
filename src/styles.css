@@ -1,11 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
 
+.fast{
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both
+}
 
-/* .animated.hinge{-webkit-animation-duration:2s;animation-duration:2s}. */
-
-#themecolors .selector {
+#themecolors .selector, .cursor {
     cursor: pointer;
 }
+
 
 #google-btn {
     align-items: center;
@@ -14,6 +18,7 @@
     text-align: center;
 }
 
-.cursor {
-    cursor: pointer;
+.img-avatar {
+    height: 200px;
+    width: 200px;
 }
