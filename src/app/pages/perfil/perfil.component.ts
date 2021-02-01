@@ -44,12 +44,12 @@ export class PerfilComponent implements OnInit {
           this.usuario.email = email;
 
           Swal({
-            title:'Guardado', 
-            text: 'Cambios fueron guardados',
+            title: 'Guardado', 
+            text: 'Cambios fueron guardados', 
             icon: 'success'});
         }, (err) => {
           Swal({
-            title:'Error', 
+            title: 'Error',
             text: err.error.msg, 
             icon: 'error'});
         });
@@ -80,11 +80,14 @@ export class PerfilComponent implements OnInit {
         this.usuario.img = img;
         Swal({
           title:'Guardado', 
-          text:'Imagen de usuario actualizada', 
-          icon:'success'});
+          text: 'Imagen de usuario actualizada',
+          icon:  'success'});
       }).catch( err => {
         console.log(err);
-        Swal('Error', 'No se pudo subir la imagen', 'error');
+        Swal({
+          title: 'Error',
+          text:  'No se pudo subir la imagen', 
+          icon: 'error'});
       })
 
   }

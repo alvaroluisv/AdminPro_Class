@@ -46,10 +46,9 @@ export class RegisterComponent {
         }, (err) => {
           // Si sucede un error
           Swal({
-            title: 'Error', 
+            title:'Error', 
             text: err.error.msg, 
-            icon: 'error'
-          } );
+            icon:'error'} );
         });
 
 

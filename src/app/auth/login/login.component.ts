@@ -50,7 +50,7 @@ export class LoginComponent implements OnInit {
       }, (err) => {
         // Si sucede un error
         Swal({
-          title: 'Error', 
+          title:'Error', 
           text: err.error.msg, 
           icon: 'error'} );
       });
